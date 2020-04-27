@@ -102,10 +102,6 @@ export default ({ data }: DataProps) => {
   );
 };
 
-interface Account {
-  id: string;
-  name: string;
-}
 export interface Data {
   id: number;
   first_name: string;
