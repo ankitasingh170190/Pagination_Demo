@@ -79,6 +79,7 @@ export default ({ data }: DataProps) => {
         <Box
           display="flex"
           justifyContent="flex-end"
+          flex={1}
           padding={1}
           paddingRight={10}
         >
@@ -87,8 +88,12 @@ export default ({ data }: DataProps) => {
             count={Math.ceil(data.length / ROWS_PER_PAGE)}
             shape="rounded"
             color="primary"
+            showFirstButton
+            showLastButton
+            boundaryCount={2}
             renderItem={(item: any) => (
               <PaginationItem
+              type={"start-ellipsis"}
                 component={Link}
                 selected
                 to={`${USER_PATH}/${item.page}`}
