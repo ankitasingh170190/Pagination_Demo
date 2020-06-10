@@ -811,35 +811,5 @@ export default [
       last_name: "Ortiz",
       email_address: "ornare@pretium.edu",
     },
-    {
-      id: 146,
-      first_name: "Chaney",
-      last_name: "French",
-      email_address: "Sed.diam.lorem@SuspendissesagittisNullam.ca",
-    },
-    {
-      id: 147,
-      first_name: "Gwendolyn",
-      last_name: "Thompson",
-      email_address: "felis.Nulla@Curabiturconsequat.net",
-    },
-    {
-      id: 148,
-      first_name: "Deborah",
-      last_name: "Holden",
-      email_address: "amet@dictum.com",
-    },
-    {
-      id: 149,
-      first_name: "Barrett",
-      last_name: "Ballard",
-      email_address: "accumsan.sed@Sed.ca",
-    },
-    {
-      id: 150,
-      first_name: "Kathleen",
-      last_name: "Gilbert",
-      email_address: "congue@Nullaeuneque.ca",
-    },
 ] as Data[];
   
