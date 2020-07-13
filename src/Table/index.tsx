@@ -79,6 +79,7 @@ export default ({ data }: DataProps) => {
         <Box
           display="flex"
           justifyContent="flex-end"
+          flex={1}
           padding={1}
           paddingRight={10}
         >
@@ -87,8 +88,12 @@ export default ({ data }: DataProps) => {
             count={Math.ceil(data.length / ROWS_PER_PAGE)}
             shape="rounded"
             color="primary"
-            renderItem={(item: any) => (
+            showFirstButton
+            showLastButton
+            boundaryCount={2}
+            renderItem={(item) => (
               <PaginationItem
+              type={"start-ellipsis"}
                 component={Link}
                 selected
                 to={`${USER_PATH}/${item.page}`}
@@ -102,10 +107,6 @@ export default ({ data }: DataProps) => {
   );
 };
 
-interface Account {
-  id: string;
-  name: string;
-}
 export interface Data {
   id: number;
   first_name: string;
@@ -114,8 +115,4 @@ export interface Data {
 }
 interface DataProps {
   data: Data[];
-}
-
-interface PaginationItem extends Element {
-  page: number;
 }
