@@ -91,7 +91,7 @@ export default ({ data }: DataProps) => {
             showFirstButton
             showLastButton
             boundaryCount={2}
-            renderItem={(item: any) => (
+            renderItem={(item) => (
               <PaginationItem
               type={"start-ellipsis"}
                 component={Link}
