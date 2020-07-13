@@ -116,7 +116,3 @@ export interface Data {
 interface DataProps {
   data: Data[];
 }
-
-interface PaginationItem extends Element {
-  page: number;
-}
